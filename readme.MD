@@ -9,7 +9,9 @@ Where key = filename, value = content
 Use the directory as your structure for information navigation.
 
 Example of how i use it to read the exception list for sitemaps for SG.
+	# You need PyGitHub - > pip install PyGitHub
 
+        from github import Github
 	g = Github(GIT_READER_NAME, GIT_READER_PASS)
         user = g.get_user()
         org  = user.get_orgs()[0]
